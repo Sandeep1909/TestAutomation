@@ -16,15 +16,17 @@ public class TestTittle {
 	     //  driver.manage().window().maximize();
 	                                                                                                                                                                                                                                                                                           
 	       String baseUrl = "https://www.facebook.com/";                            
-	       String expectedTitle = "Facebook – log in or sign up";
+	       String expectedTitle = "Facebook log in or sign up";
 	       String actualTitle = "";
 	       driver.get(baseUrl);
 	       actualTitle = driver.getTitle();
 	       System.out.println(actualTitle);
-	       if (actualTitle.equalsIgnoreCase("Facebook – log in or sign up")){
+	       if (actualTitle.equalsIgnoreCase("Facebook log in or sign up")){
 	           System.out.println("TEST PASSED!");
 	       } else {
+	    	   
 	           System.out.println("TEST FAILED");
+	           System.out.println("Test Excution Completed");
 	           
 	       }                             
 	    
